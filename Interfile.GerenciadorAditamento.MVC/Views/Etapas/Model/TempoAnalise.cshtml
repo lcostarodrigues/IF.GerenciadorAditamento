@@ -1,0 +1,18 @@
+﻿@{
+
+}
+
+<hr />
+
+<div id="divTMO">
+    <span>TMO: <span id="idTmo" class="label label-default">00:00:00</span></span>
+</div>
+
+<script>
+    function IniciarContagem() {
+        timer.start();
+        timer.addEventListener('secondsUpdated', function (e) {
+            $('#idTmo').html(timer.getTimeValues().toString());
+        });
+    }
+</script>

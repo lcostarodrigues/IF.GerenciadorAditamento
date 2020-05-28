@@ -1,0 +1,71 @@
+﻿<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Navegação</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        @*<a class="navbar-brand" href="#"><img src="~/Content/img/logo.png" height="25px" /></a>*@
+        <a class="navbar-brand" href="~/Home/Index"><img src="~/Content/img/logoInterfile.png" height="25px" /></a>
+
+    </div>
+
+
+    <ul id="navuserMobile" class="nav navbar-nav navbar-right navbar-user">
+        <li class="dropdown user-dropdown">
+
+            @*<div id="imgavatar">
+                    <img src="~/Content/img/avatar.png" style="border-radius: 50%; width: 100%;" />
+                </div>*@
+            @if (Request.RequestContext.HttpContext.User.Identity.IsAuthenticated)
+            {
+                <a href="#" class="dropdown-toggle" style="width: 200px; padding-top: 20px;" data-toggle="dropdown">@ViewBag.NomeUsuario</a>
+            }
+            else
+            {
+                <a href="#" class="dropdown-toggle" style="width: 200px; padding-top: 20px;" data-toggle="dropdown">-</a>
+            }
+            <ul class="dropdown-menu">
+                <li><a href="~/Login/Logout"><i class="fa fa-power-off"></i> Sair</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+        <ul id="active" class="nav navbar-nav" style="top: 58px"></ul>
+        <ul id="navuser" class="nav navbar-nav navbar-right navbar-user">
+            <li>
+                @*<div id="divTempoPausa">
+                    <span style="color:white">Intervalo: <span id="idTempoPausa" class="label label-default">00:00:00</span></span>
+                </div>*@
+                @*<div id="divTMO">
+                        <span style="color:white">TMO: <span id="idTmo" class="label label-default">00:00:00</span></span>
+                    </div>*@
+            </li>
+            <li class="dropdown user-dropdown">
+                @*<div id="imgavatar">
+                        <img src="~/Content/img/avatar.png" style="border-radius: 50%; width: 100%;" />
+                    </div>*@
+                @if (Request.RequestContext.HttpContext.User.Identity.IsAuthenticated)
+                {
+                    <a href="#" class="dropdown-toggle" style="width: 200px; padding-top: 20px;" data-toggle="dropdown">@ViewBag.NomeUsuario</a>
+                }
+                else
+                {
+                    <a href="#" class="dropdown-toggle" style="width: 200px; padding-top: 20px;" data-toggle="dropdown">-</a>
+                }
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="modal" data-target="#modalAlterarSenha"><i></i>Alterar Senha</a></li>
+                    <li><a href="~/Login/Logout"><i class="fa fa-power-off"></i> Sair</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+@Html.Partial("~/Views/Usuario/_ModalAlterarSenha.cshtml")
+<script src="~/scripts/Menu.js"></script>

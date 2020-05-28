@@ -1,0 +1,56 @@
+﻿@Html.Hidden("hddnDataHora")
+
+<div class="modal fade" id="modalNovoProcesso" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                @*<button type="button" class="close" id="btnFecharNovoProcesso" data-dismiss="modal">&times;</button>*@
+                <h4 class="modal-title">Novo Processo</h4>
+
+                @Html.Partial("~/Views/Etapas/Model/TempoAnalise.cshtml")
+            </div>
+            <div class="modal-body">
+                <form id="frmNovoProcesso" class="form-group" onsubmit="return false;">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <label>SEDEX/AR:</label>
+                            <input style="color: black;" class="form-control" type="text" id="txtSedex_AR" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <label>Colaborador:</label>
+                            <input style="color: black;" class="form-control" type="text" id="txtColaborador" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <label>Tipo de Operação:</label>
+                            <select id="idTipoOperacao" class="form-control text-dark" required></select>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <label>Tipo de Documento:</label>
+                            <select id="idTipoDocumento" class="form-control text-dark" required></select>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                            <label>Produto:</label>
+                            <select id="idProduto" class="form-control text-dark" required></select>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="=row">
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success" id="btnAlterarSenha">Salvar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

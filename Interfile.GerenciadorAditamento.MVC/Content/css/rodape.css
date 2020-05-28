@@ -1,0 +1,30 @@
+.contato {
+  height: 60px;
+  background: #7F8084; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#A4A5A9, #7F8084); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#A4A5A9, #7F8084); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#A4A5A9, #7F8084); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#A4A5A9, #7F8084); /* Standard syntax */
+}
+
+.contato div p {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.mapa-site ul li a {
+  line-height: 35px;
+  color: black;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.certificacao {
+  font-size: 14px;
+}
+
+.content-rodape {
+  margin: auto;
+  width: 80%;
+}

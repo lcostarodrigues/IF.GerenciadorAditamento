@@ -1,0 +1,59 @@
+.btn-default {
+	background-color: #DF6B04;
+	border-color: transparent;
+	border-radius: 25px;
+	color: white;
+	padding: 0px 15px 0px 15px;
+}
+
+.btn-default:hover,
+.btn-default:checked,
+.btn-default:active {
+	background-color:#F4B67D;
+	border-color: transparent;
+	border-radius: 25px;
+	color: white;
+	padding: 0px 15px 0px 15px;
+}
+
+.mg0 { margin: 0; }
+.mg5 { margin: 5px; }
+.mg10 { margin: 10px; }
+
+.pdin { padding: inherit; }
+.pd0 { padding: 0; }
+.pd5 { padding: 5px; }
+.pd10 { padding: 10px; }
+.pd20 { padding: 20px; }
+
+.taleft { text-align: left;}
+.tarigth { text-align: right;}
+.tacenter { text-align: center; }
+
+h1 {
+  	font-size: 22px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	padding-bottom: 15px;
+}
+
+p {
+	font-size: 12px;
+  	line-height: 20px;
+}
+
+hr {
+	border: 1px solid lightgray;
+	width: 95%;
+}
+
+a {
+	text-align: left;
+	color: #DF6B04;
+	font-weight: bold;
+	font-size: 12px;
+}
+a:hover, a:checked, a:active {
+	text-decoration: none;
+	color: #F4B67D;
+}

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10; IE=EDGE" />
+    <link href="~/Content/css/defaultLogin.css" rel="stylesheet" />
+    <link href="~/Content/css/themeLogin.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/w3data.js"></script>
+    <script src="~/Scripts/BMG.Util.js"></script>
+    <script src='~/Content/js/jquery.elevatezoom.js'></script>
+    <style type="text/css">
+
+        @@keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spinner:before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-top: -10px;
+            margin-left: -10px;
+            border-radius: 50%;
+            border-top: 5px solid #105980; /*#ff6600;*/
+            border-right: 5px solid transparent;
+            animation: spinner .6s linear infinite;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #105980; /*rgba(0,0,0,0.5);*/
+            z-index: 9000;
+        }
+    </style>
+</head>
+<body class="bglogin">
+    <section class="body">
+        <section role="main">
+            <div id="loading" class="overlay" style="display:none;">
+                <div class="spinner">
+                </div>
+            </div>
+            <div class="row rowlogin">
+                <div class="row">
+                    @RenderBody()
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

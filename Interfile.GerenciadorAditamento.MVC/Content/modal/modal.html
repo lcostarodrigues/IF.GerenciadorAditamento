@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <meta name="description" content="">
+     <meta name="author" content="Luiz Fagner Zordan">
+     <!--<link rel="icon" href="img/favicon.ico">-->
+     <link rel="icon" href="~/Content/img/interfileIco.ico">
+
+     <title>.: Banco BMG :.</title>
+
+     <!-- Bootstrap core CSS -->
+     <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+     <link href="style.css" rel="stylesheet">
+ </head>
+ <body>
+  <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal1">modal1</button>
+  <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal2">modal2</button>
+  <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal3">modal3</button>
+  <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal4">modal4</button>
+  <button type="button" class="btn btn-success btn-sm" style="width: 100%;" data-toggle="modal" data-target="#modal5">modal5</button>
+
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modal-title">Validação de segurança</h3>
+        </div>
+        <div class="modal-body">
+          <p>Para que sejam evitadas fraudes, pedimos que digite o código enviado para seu celular *********3294.</p>
+          <h4>Digite o código de segurança recebido por SMS</h4>
+          <div class="row">
+            <div class="col-md-9 col-md-offset-3">
+              <input type="text" class="form-control input-codigo" placeholder="Código de segurança" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <a href="#" >Reenviar código</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-default" data-dismiss="modal">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modal-title">Cadastro concluído com sucesso!</h3>
+        </div>
+        <div class="modal-body">
+            <p>Em breve, teremos a reposta sobre a abertura de sua conta. Enquanto isso, você pode realizar simulações e salvá-las no seu acesso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modal-title">Bem vindo ao painel de controle BMG INVEST!</h3>
+        </div>
+        <div class="modal-body">
+            <p>É um prazer tê-lo como nosso cliente. Mostraremos a seguir os recursos disponíveis para você em sua conta.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-default" data-dismiss="modal">Continuar</button>
+          <br/>
+          <a href="#">Cancelar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modal-title">Para começar a investir</h3>
+        </div>
+        <div class="modal-body">
+            <p>Você ainda não possui nenhum valor depositado em sua Conta BGM. Acesse a aba Serviços, no menu lateral, para transferir valores a sua conta.</p>
+            <p>Vimos que você já realizou simulações, recentemente, com os seguintes resultados:</p>
+            <div class="modal-simulacoes col-lg-12 col-md-12">
+              <div class="col-lg-4 col-md-4">
+                <ul>
+                  <li class="titulo">CDB PLUS PRÉ</li>
+                  <li class="subtitulo">100% CDI</li>
+                  <li>Prazo de 1 ano</li>
+                  <li>Aplicação de R$ 10.000,00</li>
+                  <li>Rendimento de R$ 11.212,00</li>
+                  <li><button type="button" class="btn-default" data-dismiss="modal">VER DETALHES</button></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <ul>
+                  <li class="titulo">CDB PLUS PRÉ</li>
+                  <li class="subtitulo">100% CDI</li>
+                  <li>Prazo de 1 ano</li>
+                  <li>Aplicação de R$ 10.000,00</li>
+                  <li>Rendimento de R$ 11.212,00</li>
+                  <li><button type="button" class="btn-default" data-dismiss="modal">VER DETALHES</button></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <ul>
+                  <li class="titulo">CDB PLUS PRÉ</li>
+                  <li class="subtitulo">100% CDI</li>
+                  <li>Prazo de 1 ano</li>
+                  <li>Aplicação de R$ 10.000,00</li>
+                  <li>Rendimento de R$ 11.212,00</li>
+                  <li><button type="button" class="btn-default" data-dismiss="modal">VER DETALHES</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h3 class="modal-title">Instruções para depósito</h3>
+        </div>
+        <div class="modal-body">
+          <div class="modal-indices">
+            <div class="indices">1</div>
+            <p>Utilize seu banco cadastrado (Bradesco Ag:1203 CT: ***00-2) para realização do depósito.</p>
+            <div class="indices">2</div>
+            <p>Faça um TED com o destino de sua conta BMG, com os dados abaixo: Banco BMG [Cod. 200]/ Agência: 0001/ Conta: 11111-2.</p>
+            <div class="indices">3</div>
+            <p>Realização a aplicação do valor nos produtos BGM de sua preferência.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+     
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

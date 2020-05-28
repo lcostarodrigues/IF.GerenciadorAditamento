@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Usuário";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/scripts/Usuario.js"></script>
+
+<div id="main" class="container">
+    <input id="BaseURL" hidden="hidden" name="BaseURL" value="@ViewBag.BaseUrl" />
+    <input id="antiForgeryToken" ng-model="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />
+    <h1>Cadastro de usuário</h1>
+    <hr>
+    <form id="cadastro">
+        <div class="row">
+            <div class="form-group col-md-4">
+                <label for="idNomeUsuario">Nome:</label>
+                <input id="idNomeUsuario" class="form-control" type="text" maxlength="100" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="idLoginUsuario">Login:</label>
+                <input id="idLoginUsuario" class="form-control" type="text" maxlength="10" required>
+            </div>
+            @*<div class="form-group col-md-3">
+                    <label for="idEmailUsuario">E-mail:</label>
+                    <input id="idEmailUsuario" class="form-control" type="text" maxlength="100" required>
+                </div>*@
+            <div class="form-group col-md-4">
+                <label for="idSenhaUsuario">Senha:</label>
+                <input id="idSenhaUsuario" class="form-control" type="password" maxlength="10" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label>Nível de acesso:</label>
+                <select id="IdGrupo" class="form-control" required></select>
+            </div>
+        </div>
+        @*<div class="row">
+                <div class="form-group col-md-6">
+                        <label>Ativo:</label>
+                        <select id="idFlAtivo" class="form-control" required></select>
+                    </div>
+            </div>*@
+    </form>
+    <div class="row" id="btns">
+        <button id="limparId" class="btn btn-warning btn-md">Limpar</button>
+        <button id="salvarId" class="btn btn-warning btn-md">Salvar</button>
+    </div>
+    <hr>
+    <div style="overflow-x: auto;">
+        <table id="dtUsuario" class="table table-striped table-hover" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Login</th>
+                    @*<th>E-mail</th>
+                    <th>Senha Criptografada</th>*@
+                    <th>Perfil</th>
+                    @*<th>Ativo</th>*@
+                    <th>&nbsp;</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+@functions{
+    public string GetAntiForgeryToken()
+    {
+        string cookieToken, formToken;
+        AntiForgery.GetTokens(null, out cookieToken, out formToken);
+        return cookieToken + ":" + formToken;
+    }
+}

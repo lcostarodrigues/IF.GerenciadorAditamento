@@ -1,0 +1,411 @@
+
+html
+{
+  overflow-x:hidden;
+}
+
+#navuserMobile
+{
+   display:none;
+}
+
+
+
+
+
+
+@media (max-width: 1180px){
+.navbar-inverse .navbar-toggle .icon-bar
+{
+   background-color:#000000;
+  
+}
+
+.navbar-inverse .navbar-toggle
+{
+    border:1px solid #FFFFFF; 
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus
+{
+    background-color:#FFFFFF;  
+    border:1px solid #000000;   
+
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+    background-color: #BDBDBD;
+}
+
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #BDBDBD;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus
+{
+   color:#000000;
+}
+
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 540px;
+}
+
+
+#navuserMobile
+{
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   position:absolute;
+   right:0;
+   top:0;  
+}
+
+
+#navuserMobile .nav > li .user-dropdown
+{
+    display: block;
+    position: relative;    
+    margin-top: -5px;
+}
+
+#navuser
+{
+   display:none;
+}
+
+
+#navuserMobile .user-dropdown
+{
+   margin-top: -8px;
+}
+
+ .navbar-inverse #navuserMobile > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus
+{
+    background-color: transparent;
+    color: #BDBDBD;
+}
+
+#navuserMobile .dropdown-toggle
+{
+    margin-top: -5px;
+}
+
+#menupublico a
+{
+  font-size: calc(0.7em + 0.47vw);
+}
+
+#imgavatar
+{
+  margin: 10px 10px 0 0;
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+}
+
+}
+
+
+
+
+@media (max-width: 1280px)
+{
+
+
+
+.navbar-header {
+ margin-left:0;
+}
+
+
+.grafico-simulacao-principal-admin h1
+{
+  width:100%;
+}
+
+.simulacao-page-simulacoes
+{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    height:auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+}
+
+
+}
+
+
+@media (max-width: 920px){
+
+
+#menupublico a
+{
+  font-size: calc(0.55em + 0.47vw);
+}
+
+}
+
+@media (max-width: 800px){
+
+.simulacao-page .simulacao-produto
+{
+      width: 50%;
+}
+
+
+}
+
+
+@media (max-width: 768px){
+
+
+   html
+   {
+    overflow-x: hidden;     
+    width:100%;
+   }
+   
+   body
+   {
+      max-width:100%;
+      overflow-x: hidden;
+   }
+
+
+.extrato-grafico
+{
+   height:auto;
+}
+
+
+#imgavatar
+{
+      margin: 4px 10px 0 0;
+}
+
+
+
+.extrato-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 45px;
+
+}
+
+.extrato-grafico
+{
+   height:auto;
+   width:100%;
+   margin: 0px;
+}
+
+
+.simulacao-page-title
+{
+    margin-top: 45px;
+}
+
+.simulacao-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; 
+    margin-left: 5%;
+    padding-bottom: 35px;       
+    height: auto;
+    text-align: center;
+    width: 100%;
+
+}
+
+.simulacao-page .simulacao-produto {
+    padding:0;
+    width: 60%;
+}
+
+
+.simulador-form ul li label
+{
+   height:auto;
+}
+
+.content-tabela-aplicacoes
+{
+   padding:10px;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
+{
+    font-size: calc(0.6em + 0.5vw);   
+    padding: 3px;
+
+}
+
+.content-extrato-geral
+{
+   padding:5px;
+}
+
+.buttonsAplicacao
+{
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;   
+}
+
+.buttonsAplicacao .col-lg-2 {
+    padding: 0px 1px;
+    width: 33%;
+
+}
+
+.transf-investimento .opconta
+{
+   height:auto;
+}
+
+.opconta .transf-conta-item
+{
+    margin-top: 10px;
+}
+
+.transf-conta
+{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;   
+    -webkit-box-pack: justify;   
+        -ms-flex-pack: justify;   
+            justify-content: space-between;    
+}
+
+.opconta .transf-conta-item
+{
+   margin-left:0;
+   width: 100%;
+
+}
+
+.aplicacao-investimento-btn {
+	bottom: 15px;
+}
+
+.aplicacao-investimento-btn .visualizacao-btn {
+	width: 100%;
+	margin: 5px 0;
+	bottom: 0;
+	}
+
+.transf-form input
+{
+    width: 100%;   
+}
+
+.attention-box
+{
+    border: 1px solid #DF6B04;
+    border-radius: 8px;
+    margin-left: 4%;
+    margin-bottom: 25px;
+    width: 92%;
+    text-align: center;    
+}
+
+.simulacao-btn .intrucao-btn
+{
+    font-size: calc(0.6em + 0.5vw); 
+}
+
+
+.simulacao-btn
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+
+.aplicacao-investimento-btn
+{
+   display:-webkit-box;
+   display:-ms-flexbox;
+   display:flex;
+   -webkit-box-pack:center;
+       -ms-flex-pack:center;
+           justify-content:center;
+   -ms-flex-wrap:wrap;
+       flex-wrap:wrap;
+}
+
+
+.aplicacao-grafico
+{
+   padding:0;
+}
+
+.resgate-grafico
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+    width: 100%;
+}
+
+#myChart
+{
+    max-width: 100%;
+}
+
+#content-order { 
+  display: flex; 
+  /* Optional, if you want the DIVs 100% width: */ 
+  flex-direction: column;
+}
+#content-order > #order1 { order: 2; }
+#content-order > #order1 { order: 1; }
+
+
+
+}
+
+
+
+
+@media (max-width: 320px){
+   .navbar-brand
+   {
+      margin-left: -31px;
+   }
+}

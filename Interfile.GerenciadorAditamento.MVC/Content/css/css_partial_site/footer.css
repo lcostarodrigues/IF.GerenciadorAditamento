@@ -1,0 +1,102 @@
+.aprenda-sobre {
+  height: 200px;
+  text-align: center;
+}
+
+.aprenda-sobre img {
+  position: absolute;
+  width: 90%;
+  left: 70px;
+}
+
+.content-noticias {
+  margin: auto;
+  width: 90%;
+}
+
+.noticias {
+  margin-bottom: 40px;
+  display: table;
+}
+
+.noticias div {
+  float: left;
+  padding: 10px;
+}
+
+.noticias div img {
+  width: 260px;
+}
+
+.noticias .noticia-titulo {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: darkturquoise;
+  font-weight: bold;
+  width: 260px;
+}
+
+.noticias .noticia-descricao {
+  padding: 10px;
+  text-align: justify;
+  width: 260px;
+}
+
+.duvidas-frequentes {
+  text-align: center;
+  height: 40px;
+}
+
+.duvidas-frequentes .duvidas-titulo, .opiniao-especialistas .opiniao-titulo {
+    background: white;
+    padding: 15px 0px;
+    position: absolute;
+    top: -5px;
+    width: 25%;
+    margin-left: 36.5%;
+    text-align: center;
+}
+
+.opiniao-especialistas .opiniao-titulo {
+	width: 30%;
+}
+
+.conteudo-opiniao {text-align: center;}
+
+.conteudo-opiniao iframe {
+	margin: 25px auto;
+	width: 60%;
+	
+}
+
+.content-duvidas {
+  margin: auto;
+  width: 80%;
+}
+
+.duvidas, .mapa-site,  {
+  display: table;
+}
+
+.duvidas div {
+  float: left;
+  padding: 10px;
+}
+
+.duvidas .panel-title a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.duvidas .panel-title a:hover {
+  text-decoration: none;
+  font-size: 12px;
+  color: lightgray;
+}
+
+.content-mapa-site {
+  margin: auto;
+  width: 80%;
+  padding-top: 30px;
+}

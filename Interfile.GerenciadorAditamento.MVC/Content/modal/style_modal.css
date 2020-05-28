@@ -1,0 +1,109 @@
+.modal-dialog{
+  text-align: center;
+  margin: 10;
+}
+
+.modal-footer{
+  text-align: center;
+  padding: 10px;
+}
+
+.modal-body{
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 30px;
+  display: table;
+}
+
+/* MODAL 1 */
+#modal1 p, h4, a {
+  padding: 10px;
+}
+
+.input-codigo {
+  width: 220px;
+  text-align: center;
+}
+
+.modal-footer .btn-default {
+    background-color: #DF6B04;
+    border: transparent;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 50px 10px 50px;
+}
+
+.modal-footer .btn-default:hover {
+    background-color: #F4B67D;
+}
+/* FIM MODAL 1 */
+
+/* MODAL 2 */
+/* FIM MODAL 2 */
+
+/* MODAL 3 */
+
+
+/* MODAL 4 */
+
+.modal-simulacoes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-simulacoes ul li {
+  text-align: left;
+  font-size: 10px;
+}
+
+.modal-simulacoes ul .titulo {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #DF6B04;
+  padding-bottom: 10px;
+}
+
+.modal-simulacoes ul .subtitulo {
+  font-weight: bold;
+  color: grey;
+}
+
+.modal-simulacoes .btn-default {
+    background-color: #DF6B04;
+    border: transparent;
+    border-radius: 25px;
+    color: white;
+    padding: 2px 10px;
+    font-size: 10px;
+    margin-top: 10px; 
+}
+
+.modal-simulacoes .btn-default:hover {
+    background-color: #F4B67D;
+}
+/* FIM MODAL 4 */
+
+/* MODAL 5 */
+.indices{
+  float: left;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #DF6B04;
+  color: #DF6B04;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-indices{
+  padding: 2px;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.modal-indices p{
+  padding-left: 40px;
+}
+
+/* FIM MODAL 5 */

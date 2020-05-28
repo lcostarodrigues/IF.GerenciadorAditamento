@@ -1,0 +1,132 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    @*<link rel="icon" href="~/Content/img/favicon.ico">*@
+    <link rel="icon" href="~/Content/img/interfileIco.ico">
+    <title>.: Interfile - Gerenciador de Filas :.</title>
+    <!-- Bootstrap core CSS -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/Content/css/reset.css" rel="stylesheet">
+    <link href="~/Content/css/config.css" rel="stylesheet">
+    <link href="~/Content/css/loader.css" rel="stylesheet">
+    <link href="~/Content/css/dashboard.css" rel="stylesheet">
+    <link href="~/Content/css/header_admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/css/simple-line-icons.css">
+    <link href="~/Content/css/simular-investimento.css" rel="stylesheet">
+    <!-- dataTables -->
+    <link href="~/Content/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="~/Content/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="~/Content/dataTables/dataTables.foundation.css" rel="stylesheet">
+    <link href="~/Content/dataTables/dataTables.jqueryui.css" rel="stylesheet">
+    <link href="~/Content/dataTables/jquery.dataTables.css" rel="stylesheet">
+    <link href="~/Content/dataTables/jquery.dataTables_themeroller.css" rel="stylesheet">
+    <!-- DatePicker -->
+    <link href="~/Content/css/datepicker.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/Chart.min.js"></script>
+    <script src="~/Content/js/jquery.mask.min.js"></script>
+    <script src="~/Content/js/jquery.maskMoney.min.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/w3data.js"></script>
+    <!-- dataTables -->
+    <script src="~/Scripts/DataTables/jquery.dataTables.js"></script>
+    <script src="~/Scripts/DataTables/jquery.dataTables.min.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/DataTables/dataTables.bootstrap.min.js"></script>
+    <script src="~/Scripts/BMG.Util.js"></script>
+    <!-- DatePicker -->
+    <script src="~/Content/js/moment.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.js"></script>
+    <script src="~/Content/js/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src='~/Content/js/jquery.elevatezoom.js'></script>
+
+    <style type="text/css">
+
+        #menupublico a {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+            #menupublico a:hover {
+                background-color: #3A5693; /*#6f2d35;*/
+                border-radius: 8%;
+            }
+
+        #imgavatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid;
+            float: left;
+            margin: 10px 10px 0 0;
+        }
+
+        #navuser a:hover {
+            background-color: initial;
+            color: grey;
+        }
+
+        .side-nav > li.dropdown > ul.dropdown-menu > li > a {
+            margin-left: 10%;
+        }
+
+        @@keyframes spinner {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .spinner:before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            margin-top: -10px;
+            margin-left: -10px;
+            border-radius: 50%;
+            border-top: 5px solid #105980; /*#ff6600;*/
+            border-right: 5px solid transparent;
+            animation: spinner .6s linear infinite;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 9000;
+        }
+    </style>
+    <link href="~/Content/css/rodape.css" rel="stylesheet">
+    <link href="~/Content/css/style_mobile_admin.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loading" class="overlay" style="display:none;">
+        <div class="spinner">
+        </div>
+    </div>
+    <div>
+        @Html.Partial("~/Views/Menu/_Menu.cshtml")
+        <br />
+        @RenderBody()
+    </div>
+    <link href="~/Content/js/Chart.min.js" rel="stylesheet" />
+</body>
+</html>

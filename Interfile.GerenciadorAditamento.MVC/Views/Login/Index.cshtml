@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout_Login.cshtml";
+}
+<script src="~/scripts/Login.js"></script>
+<input id="BaseURL" hidden="hidden" name="BaseURL" value="@ViewBag.BaseUrl" />
+<section class="body-sign">
+    <div class="center-sign">
+        <a href="/" class="logo pull-left">
+            @*<img src="~/Content/img/bmg_white.png" height="54" alt="" />*@
+            <img src="~/Content/img/logoInterfile.png" height="54" alt="Interfile" />
+        </a>
+        <div class="panel panel-sign">
+            <div class="panel-title-sign mt-xl text-right">
+                <h2 class="title text-uppercase text-weight-bold m-none titlelogin"><i class="fa fa-user mr-xs"></i>Formulário de Login</h2>
+            </div>
+            <div class="panel-body pnbody">
+                <div class="form-group mb-lg">
+                    <label>Login</label>
+                    <div class="input-group input-group-icon">
+                        <input id="login" name="user" type="text" class="form-control input-lg" required />
+                        <span class="input-group-addon">
+                            <span class="icon icon-lg">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group mb-lg">
+                    <div class="clearfix">
+                        <label class="pull-left">Senha</label>
+                    </div>
+                    <div class="input-group input-group-icon">
+                        <input id="password" name="pwd" type="password" class="form-control input-lg" required />
+                        <span class="input-group-addon">
+                            <span class="icon icon-lg">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                    </div>
+                    <div class="col-sm-4 text-right">
+                        <button id="logarId" type="button" class="btn btn-primary hidden-xs buttonlogin">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

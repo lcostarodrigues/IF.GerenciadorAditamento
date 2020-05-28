@@ -1,0 +1,470 @@
+.navbar-default {
+    background-color: #FFFFFF;
+}
+
+
+.cadastro-form input[type="text"]::-webkit-input-placeholder , .cadastro-form input[type="email"]::-webkit-input-placeholder , .cadastro-form input[type="tel"]::-webkit-input-placeholder , .cadastro-form input[type="password"]::-webkit-input-placeholder 
+{
+  color:#7e8188
+}
+
+
+.cadastro-form input[type="text"]::-moz-placeholder, .cadastro-form input[type="email"]::-moz-placeholder, .cadastro-form input[type="tel"]::-moz-placeholder, .cadastro-form input[type="password"]::-moz-placeholder  
+{
+  color: #7e8188;       
+}
+.cadastro-form input[type="text"]:-ms-input-placeholder, .cadastro-form input[type="email"]:-ms-input-placeholder, .cadastro-form input[type="tel"]:-ms-input-placeholder  , .cadastro-form input[type="password"]:-ms-input-placeholder
+{
+  color: #7e8188;     
+}
+.cadastro-form input[type="text"]:-moz-placeholder, .cadastro-form input[type="email"]:-moz-placeholder , .cadastro-form input[type="tel"]:-moz-placeholder  , .cadastro-form input[type="password"]:-moz-placeholder
+{
+  color: #7e8188;       
+}
+
+
+
+
+#navbar ul li a:not(.acessar-btn)
+{
+  margin-top:0;
+}
+
+.login-form .acessar-btn
+{
+  margin-top:0;
+}
+
+.carrossel-box .col-md-12 {
+    width: 22%;
+ }   
+
+.login-recuperar
+{
+  margin-top: 7px;
+}
+
+.navbar-nav {
+  margin-top: 6px;
+}
+
+.login-form input
+{
+  background:none;
+}
+
+.login-form input[type="text"]::-webkit-input-placeholder 
+{
+  color: #DF6B04;   
+}
+
+.login-form input[type="text"]::-moz-placeholder 
+{
+  color: #DF6B04;       
+}
+  .login-form input[type="text"]:-ms-input-placeholder
+{
+  color: #DF6B04;     
+}
+  .login-form input[type="text"]:-moz-placeholder
+{
+  color: #DF6B04;       
+}
+
+@media (max-width: 1180px)
+{
+
+  .cadastro-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width:100%;
+}
+
+.cadastro-page .cadastro-descricao {
+    width: 100%;
+}
+
+.cadastro-page .cadastro-titulo
+{
+    margin-top: 29px;
+    padding: 0;
+    width: 100%;
+}
+
+.cadastro-page 
+{
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.descricao-form-cadastro 
+{
+    width: 100%;
+}
+
+
+
+  .chat
+  {
+    display:none;
+  }
+
+/* Menu Mobile */
+
+
+.login-recuperar
+{
+   left:0;
+   margin-top:15px;
+   text-align: center;  
+   width: 100%;
+}
+
+#navbar ul li a:not(.acessar-btn)
+{
+  margin-top:10px;
+}
+
+.login-form .acessar-btn
+{
+  margin-top:10px;
+}
+
+.container-login-form
+{
+  width:100%;
+}
+
+
+  .navbar-nav { 
+    border-bottom: 3px solid #979797;   
+    margin: 0px 45px;
+    padding:0 0 5px 0;
+  }
+  .login-form
+  {
+    width:100%;
+  }
+
+
+
+.login-form input[type="text"]
+{
+  display:none;   
+}
+
+
+  .login-form-item
+  {
+    margin-right:0;
+    width:100%;
+  }
+
+  .navbar-collapse .login-form input 
+  {
+    width:100%;
+  }
+
+  #navbar ul li a:not(.acessar-btn)
+  {
+    color: #3e3f41;
+  }
+
+  .login-form input::-webkit-input-placeholder 
+  {
+    color: #3e3f41;   
+  }
+
+  .login-form input::-moz-placeholder 
+  {
+    color: #3e3f41;       
+  }
+    .login-form input:-ms-input-placeholder
+  {
+    color: #3e3f41;     
+  }
+    .login-form input:-moz-placeholder
+  {
+    color: #3e3f41;       
+  }
+
+  .login-form input
+  {
+    background-color: #FFFFFF;    
+  }
+
+  .login-form .acessar-btn
+  {
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    font-size: 14px;    
+    height:42px;  
+    -webkit-box-pack:center;  
+        -ms-flex-pack:center;   
+            justify-content:center;
+    width: 100%;
+  }
+
+  .login-form .conta-btn
+  {
+    border-radius:50px;
+    width: 100%;
+  }
+
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse
+  {
+    height:100%;
+    margin:0;
+    max-height:100%;
+
+  }
+
+  .nav > li > a
+  {
+      padding: 10px 2px;  
+  }
+
+  #navbar ul li a:not(.acessar-btn)#criar-conta-mobile
+  {
+    border-radius:50px;
+  }
+
+  #criar-conta-mobile
+  {
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+
+    display:-webkit-box;
+
+    display:-ms-flexbox;
+
+    display:flex;
+    height:42px;
+    -webkit-box-pack:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    padding: 0;
+    width: 100%;
+  }
+
+.navbar-collapse.collapse
+{
+  min-height:435px;
+}
+
+.container-esqueci-senha
+{
+  margin-left:0px;
+}
+
+
+}
+
+
+
+@media (max-width: 767px){
+.cadastro-form .input-lg {
+	width: 90%;
+	}
+
+.cadastro-informativo p {
+	width: 80%;
+	}
+
+.cadastro-page hr {
+	width: 80%;
+	}
+}
+
+
+@media (max-width: 768px){
+
+
+
+   html
+   {
+      overflow-x: hidden;     
+    width:100%;
+   }
+   
+   body
+   {
+      max-width:100%;
+      overflow-x: hidden;
+   }
+
+
+
+  .table tbody tr td, .opcaoCDB .descricao-opcaoCDB, .opcaoLCA .descricao-opcaoLCA, .opcaoLCI .descricao-opcaoLCI
+  {
+    font-size: calc(0.6em + 0.5vw);
+  }
+
+  .taxa-prazos
+  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
+  }
+
+  .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td
+  {
+   padding:1px;   
+  }
+
+  .content-carrossel
+  {
+  height: 360px;
+    margin-top:32px;    
+  }
+
+
+  .carrossel-group-box .carrossel-group-btn {
+    position: inherit;
+    left: inherit;
+    top: -19px;
+  }
+
+ .carrossel-item-box
+ {
+  height: 112px;
+ }
+
+.carrossel-box {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 350px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.carrossel-box .col-md-12 {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    float: left;
+    height: 154px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
+    margin-left: 0;
+    width: 33%;
+}
+
+  .content-noticias
+  {
+    width:100%;
+  }
+
+  .content-noticias .noticias
+  {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;  
+
+  }
+
+  .starter-template
+  {
+      padding: 72px 15px;
+  }
+
+.carrossel-group-box .carrossel-group-btn {
+    position: inherit;
+    left: inherit;
+    top: -19px;
+
+}
+
+.col-lg-12.duvidas-frequentes .duvidas-titulo
+{
+      top: -31px;
+}
+
+
+.produtos-page .tipo-produto
+{
+   margin-left:0%;
+}
+
+
+.cadastro-page
+{
+  display:inherit;
+}
+
+
+.simulador-form {
+  width: 100%;
+}
+
+.slider.slider-horizontal {
+  width: 100%;
+}
+
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label {
+  font-size: 12px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 568px){
+
+  .carrossel-box .col-md-12 {
+      width: 49%;
+  }
+
+.carousel {
+  margin-top: 50px;
+  height: 250px;
+  overflow: hidden;
+  }
+  
+
+.carousel .item img {
+  max-width: 
+  }
+
+
+.carrossel-group-box .carrossel-group-btn {
+    position: inherit;
+}
+
+
+}

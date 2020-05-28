@@ -1,0 +1,51 @@
+.carousel-inner img {
+    width: 100%;
+}
+
+.content-carrossel {
+    height: 150px;
+}
+
+.carrossel-box {
+    max-width: 1440px;
+}
+
+.carrossel-group-box {
+    margin-left: 3%;
+    float: left;
+}
+
+.carrossel-item-box {
+    background: white;
+    border: 1px solid lightgrey;
+    text-align: left;
+    padding: 15px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 999;
+    top: -10px;
+}
+
+.carrossel-item-box li {
+    line-height: 20px;
+    font-size: 10px;
+}
+
+.carrossel-item-box .box-titulo {
+    text-transform: uppercase;
+    color: #DF6B04;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.carrossel-item-box .box-subtitulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.carrossel-group-box .carrossel-group-btn {
+    position: absolute;
+    left: 30px;
+    top: 120px;
+}

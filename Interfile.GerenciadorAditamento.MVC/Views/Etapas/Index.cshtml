@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/scripts/Etapas/Etapas.js"></script>
+
+<div id="main" class="container">
+    <input id="BaseURL" hidden="hidden" name="BaseURL" value="@ViewBag.BaseUrl" />
+    <input id="antiForgeryToken" ng-model="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />
+    <h1>Etapas</h1>
+    <hr>
+
+    <div class="=row">
+        <div class="form-group col-md-3">
+            <input type="button" class="btn btn-primary" id="btnNovoProcesso" value="Novo processo" />
+        </div>
+    </div>
+    <div class="=row">
+        <div class="form-group col-md-12" style="overflow-x: auto;">
+            <table id="dtEtapas" class="table table-striped table-hover" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>SEDEX/AR</th>
+                        <th>Colaborador</th>
+                        <th>Contrato</th>
+                        <th>Tipo de Operação</th>
+                        <th>Tipo de Documento</th>
+                        <th>Produto</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("~/Views/Etapas/Model/NovoProcesso.cshtml")
+
+@functions{
+    public string GetAntiForgeryToken()
+    {
+        string cookieToken, formToken;
+        AntiForgery.GetTokens(null, out cookieToken, out formToken);
+        return cookieToken + ":" + formToken;
+    }
+}

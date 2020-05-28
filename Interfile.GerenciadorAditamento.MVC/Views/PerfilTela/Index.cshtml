@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Perfil por Tela";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/scripts/PerfilTela.js"></script>
+<div id="main" class="container">
+    <input id="BaseURL" hidden="hidden" name="BaseURL" value="@ViewBag.BaseUrl" />
+    <input id="antiForgeryToken" ng-model="antiForgeryToken" type="hidden" value="@GetAntiForgeryToken()" />
+    <h1>Permissão Por Tela</h1>
+    <hr>
+    <form id="cadastro">
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label>Perfil:</label>
+                <select id="idGrupo" class="form-control" required></select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-12">
+                <table id="dtPerfilTela" class="table table-striped table-hover" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Tela</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+    <div class="row" id="btns">
+        <button id="salvarId" class="btn btn-warning">Salvar</button>
+    </div>
+</div>
+@functions{
+    public string GetAntiForgeryToken()
+    {
+        string cookieToken, formToken;
+        AntiForgery.GetTokens(null, out cookieToken, out formToken);
+        return cookieToken + ":" + formToken;
+    }
+}

@@ -1,0 +1,238 @@
+.simular-investimento {
+  color: white;
+  height: auto;
+  text-align: center;
+  background: #DF6B04; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#F4B67D, #DF6B04); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#F4B67D, #DF6B04); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#F4B67D, #DF6B04); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#F4B67D, #DF6B04); /* Standard syntax */
+}
+
+.simular-investimento-titulo {
+  font-size: 22px;
+  padding: 25px 0 80px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.simular-questao {
+  font-weight: normal;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
+/* INICIO RADIO PERSONALIZADO*/
+.simulador-form {
+  margin: auto;
+  height: auto;
+  display: table;
+  width: 50%;
+  bottom: 0; left:0; right: 0; top:0;
+  padding: 0 0 50px 0;
+  text-align: left;
+  width: 40%;
+}
+
+.simulador-form ul {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.simulador-form ul li {
+  display: block;
+  position: relative;
+  float: left;
+  width: 30%%;
+}
+
+.simulador-form ul li input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.simulador-form ul li label {
+  display: block;
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  padding: 0 25px 0 60px;
+  margin: 10px auto;
+  z-index: 9;
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear;
+}
+
+.simulador-form ul li .check {
+  display: block;
+  position: absolute;
+  border: 3px solid white;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 5px;
+  left: 20px;
+	z-index: 5;
+	transition: border .25s linear;
+	-webkit-transition: border .25s linear;
+}
+
+.simulador-form ul li .check::before {
+  display: block;
+  position: absolute;
+	content: '';
+  border-radius: 100%;
+  height: 13px;
+  width: 13px;
+  top: 3px;
+  left: 3px;
+  margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+.simulador-form input[type=radio]:checked ~ .check::before {
+  background: white;
+}
+/* FIM RADIO PERSONALIZADO */
+
+/* INICIO INPUT PERSONALIZADO */
+.simular-form input {
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: solid 2px white;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+  color: white;
+  background-color: transparent;
+  height: auto;
+}
+
+.simular-form input:focus, .simular-form input.focus {
+  font-size: 14px;
+  color: white;
+}
+
+::-webkit-input-placeholder { color: gray; }
+:-moz-placeholder { color: gray; }
+::-moz-placeholder { color: gray; }
+:-ms-input-placeholder { color: gray; }
+/* FIM INPUT PERSONALIZADO */
+
+.simulador-btn .continuar-btn {
+  margin: 60px 0;
+  padding: 10px 90px 10px 90px;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+
+.simulador-btn .continuar-btn:hover {
+  background-color: #DF6B04;
+  color: white;
+}
+
+/* INICIO RANGE PERSONALIZADO */
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 30%;
+  margin: 0 40px 0 35%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 1px;
+  border: 0px solid #FFFFFF;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 6px solid #FFFFFF;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #DF6B04;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -11.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #FFFFFF;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #FFFFFF;
+  background: #FFFFFF;
+  border-radius: 1px;
+  border: 0px solid #FFFFFF;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 6px solid #FFFFFF;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #DF6B04;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #FFFFFF;
+  border: 0px solid #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+}
+input[type=range]::-ms-fill-upper {
+  background: #FFFFFF;
+  border: 0px solid #FFFFFF;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #FFFFFF;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #FFFFFF;
+  border: 6px solid #FFFFFF;
+  height: 22px;
+  width: 22px;
+  border-radius: 50px;
+  background: #DF6B04;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #FFFFFF;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #FFFFFF;
+}
+/* FIM RANGE PERSONALIZADO */
+
+
+
